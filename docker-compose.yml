@@ -1,0 +1,19 @@
+services:
+  gateway:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - PLATFORM_C_URL=http://mock-platform-c:4000/receive
+    depends_on:
+      - mock-platform-c
+    restart: unless-stopped
+
+  mock-platform-c:
+    build:
+      context: .
+      dockerfile: Dockerfile.mock
+    ports:
+      - "4000:4000"
+    restart: unless-stopped
