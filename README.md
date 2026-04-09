@@ -66,6 +66,7 @@ npm run simulate
 
 ### Resultado de la simulación
 ![Simulate Result](assets/message-stats.png)
+![Simulate Result](assets/message-complete.png)
 
 ### Stats del Gateway en tiempo real
 ![Gateway Stats](assets/stats.png)
@@ -159,5 +160,5 @@ Cuando no todos los mensajes tienen el mismo peso — por ejemplo OTPs bancarios
 ## Autor
 
 **Roxana Mendoza Díaz**
-Fullstack Developer | Node.js · AWS · Vue.js · React
+Fullstack Developer | Node.js · AWS · Vue.js · React 
 rox050996@gmail.com
